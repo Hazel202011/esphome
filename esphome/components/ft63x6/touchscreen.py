@@ -3,7 +3,7 @@ import esphome.config_validation as cv
 
 from esphome import pins
 from esphome.components import i2c, touchscreen
-from esphome.const import CONF_ID, CONF_INTERRUPT, CONF_RESET_PIN
+from esphome.const import CONF_ID, CONF_INTERRUPT_PIN, CONF_RESET_PIN
 
 CODEOWNERS = ["@gpambrozio"]
 DEPENDENCIES = ["i2c"]
