@@ -44,8 +44,8 @@ void FT63X6Touchscreen::setup() {
   this->hard_reset_();
 
   // Get touch resolution
-  this->x_resolution_ = 240;
-  this->y_resolution_ = 320;
+  this->x_resolution_ = 320;
+  this->y_resolution_ = 240;
 }
 
 void FT63X6Touchscreen::loop() {
@@ -72,7 +72,7 @@ void FT63X6Touchscreen::check_touch_() {
     return;
   }
 
-  touched_ = false;
+  touched_ = true;
 
   uint8_t touch_id = read_touch_id_(FT63X6_ADDR_TOUCH1_ID);  // id1 = 0 or 1
   uint8_t first_touch_id = touch_id;
