@@ -72,7 +72,7 @@ void FT63X6Touchscreen::check_touch_() {
     return;
   }
 
-  touched_ = true;
+  touched_ = false;
 
   uint8_t touch_id = read_touch_id_(FT63X6_ADDR_TOUCH1_ID);  // id1 = 0 or 1
   uint8_t first_touch_id = touch_id;
